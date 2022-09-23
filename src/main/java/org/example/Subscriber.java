@@ -6,6 +6,10 @@ import java.util.List;
 public class Subscriber {
     private final List<Price> subscriberMessages = new ArrayList<>();
 
+    public List<Price> getSubscriberMessages() {
+        return subscriberMessages;
+    }
+
     public void addMessage(Price message) {
         for (int i = 0; i < subscriberMessages.size(); i++) {
             if (message.getInstrument().equals(subscriberMessages.get(i).getInstrument())) {
