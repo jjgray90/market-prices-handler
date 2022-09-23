@@ -15,11 +15,9 @@ public class Subscriber {
         subscriberMessages.add(message);
     }
 
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Subscriber{");
-        sb.append("subscriberMessages=").append(subscriberMessages);
-        sb.append('}');
-        return sb.toString();
+    public void printMessages() {
+        for(Price price : subscriberMessages) {
+            System.out.println(price);
+        }
     }
 }

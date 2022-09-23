@@ -28,7 +28,6 @@ public class Price {
         }
     }
 
-
     public int getId() {
         return id;
     }
